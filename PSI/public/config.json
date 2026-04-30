@@ -1,0 +1,71 @@
+{
+    "adversary_hparams": {
+        "logits": 10,
+        "needed": [
+            "split_layer"
+        ],
+        "pretrained": false
+    },
+    "adversary_logits": 7,
+    "batch_size": 64,
+    "client_hparams": {
+        "needed": [
+            "split_layer",
+            "is_grid_crop"
+        ],
+        "pretrained": false
+    },
+    "dataset": "faircam",
+    "dataset_path": "../../",
+    "dir_of_inputs": null,
+    "exp_id": "1",
+    "experiment_config": {},
+    "experiment_name": "PSI_faircam_race_resnet18_scratch_5_1_0.1_31_sync",
+    "experiment_path": null,
+    "experiment_type": "training",
+    "experiments_folder": "../../chap/chap/experiments/PSI/",
+    "gpu_devices": [
+        0
+    ],
+    "img_size": 32,
+    "is_async": 0,
+    "is_grid_crop": false,
+    "is_server": 1,
+    "ixx_r": 5,
+    "ixy_r": 1,
+    "ixz_r": 0.1,
+    "lambda1": 1.0,
+    "lambda2": 1.0,
+    "learning_rate": 0.01,
+    "log_path": "../../chap/chap/experiments/PSI/PSI_faircam_race_resnet18_scratch_5_1_0.1_31_sync/logs/",
+    "model_name": "resnet18_scratch",
+    "model_path": "../../chap/chap/experiments/PSI/PSI_faircam_race_resnet18_scratch_5_1_0.1_31_sync/saved_models/",
+    "num_gpus": 1,
+    "prediction_attribute": "gender",
+    "protected_attribute": "race",
+    "pruner_hparams": {
+        "needed": [
+            "split_layer",
+            "pruning_ratio",
+            "pruning_style"
+        ],
+        "pretrained": false
+    },
+    "pruning_ratio": 0.64,
+    "pruning_style": "network",
+    "research_config": {},
+    "results_path": "../../chap/chap/experiments/PSI/PSI_faircam_race_resnet18_scratch_5_1_0.1_31_sync",
+    "server_hparams": {
+        "logits": 7,
+        "needed": [
+            "split_layer"
+        ],
+        "pretrained": false
+    },
+    "server_logits": 7,
+    "split": false,
+    "split_layer": 3,
+    "test_batch_size": 64,
+    "total_epochs": 31,
+    "train_batch_size": 64
+}
